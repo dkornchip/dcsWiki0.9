@@ -9,17 +9,20 @@ Renders a component that displays a list of answer options for a quiz question.
 
 'use client'
 
-import { useEffect, useState } from 'react'
-import cn from 'classnames'
-import Link from 'next/link'
-import { FiRepeat } from 'react-icons/fi'
-import { MdNearbyError } from 'react-icons/md'
-import { FaCheck } from 'react-icons/fa'
+import { useEffect, useState } from 'react';
+import cn from 'classnames';
+import Link from 'next/link';
+import { FiRepeat } from 'react-icons/fi';
+import { MdNearbyError } from 'react-icons/md';
+import { FaCheck } from 'react-icons/fa';
 
 export const Answer = ({ answers, questionId }) => {
   const [selected, setSeleceted] = useState(null)
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(false)
+  const [secondsRemaining, setSecondsRemaining] = useState(5);
+  const [timeExpired, setTimeExpired] = useState(false);
+
 
   useEffect(() => {
     let subscribed = true
@@ -41,8 +44,31 @@ export const Answer = ({ answers, questionId }) => {
     }
   }, [questionId, selected])
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSecondsRemaining(prevSeconds => prevSeconds - 1);
+    }, 1000);
+  
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+  
+  useEffect(() => {
+    if (secondsRemaining <= 0) {
+      setTimeExpired(true);
+      setSecondsRemaining("FAIL!")
+      // Redirect to /quiz/fail after 5 seconds (adjust the timeout as needed)
+      setTimeout(() => {
+        window.location.href = '/quiz/fail';
+      }, 5000);
+    }
+  }, [secondsRemaining]);
+  
+
   return (
     <>
+      <div>Seconds Remaining: {secondsRemaining}</div>
       <ul className="grid grid-cols-2 gap-2 md:grid-cols-4">
         {answers.map(item => {
           const isLoading = selected === item && loading
