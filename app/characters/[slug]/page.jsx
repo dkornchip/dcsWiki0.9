@@ -70,7 +70,7 @@ export default async function Page({ params }) {
       </ul>
       {character.skills && (
         <>
-          <h2 className="text-xl font-bold">Power and Skills</h2>
+          <h2 className="text-xl font-bold">In-game characteristics</h2>
           <ul className="flex flex-wrap gap-1">
             {character.skills.map(item => {
               return (
@@ -87,7 +87,7 @@ export default async function Page({ params }) {
       )}
       {character_qoutes && (
         <>
-          <h2 className="text-xl font-bold">Famous Qoutes</h2>
+          <h2 className="text-xl font-bold">Pilot Notes</h2>
           <ul className="grid gap-5">
             {character_qoutes.map((item, idx) => {
               return (
