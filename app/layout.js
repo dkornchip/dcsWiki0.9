@@ -14,8 +14,8 @@ import { Navigation } from '@/components'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Family Guy',
-  description: 'Come here and learn more about Family Guy!',
+  title: 'IL-2 1946 Wiki',
+  description: 'A definitive resource guide for IL-2 1946',
 }
 
 export default function RootLayout({ children }) {

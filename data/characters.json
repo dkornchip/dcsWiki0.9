@@ -2,42 +2,25 @@
   "data": [
     {
       "id": 1,
-      "name": "peter griffin",
-      "slug": "peter-griffin",
+      "name": "Grumman F6F Hellcat",
+      "slug": "f6f",
       "skills": [
-        "Superhuman strength",
-        "Superhuman speed",
-        "Superhuman agility",
-        "Superhuman durability",
-        "Superhuman stamina",
-        "Superhuman endurance",
-        "Manipulation",
-        "Regeneration",
-        "Flatulence manipulation",
-        "Combat and fighting skills/prowess",
-        "Gravity aura",
-        "Marksmanship",
-        "Cartoon physics",
-        "Charisma",
-        "Biokinesis",
-        "Substance tolerance",
-        "Fourth wall-breaking",
-        "Broadway force",
-        "Teleportation",
-        "Cutaways",
-        "Mind penetration"
+        "Superior climb",
+        "Rugged construction",
+        "Heavy and versatile armament",
+        "Pleasant flight characteristics"
       ],
-      "description": "Introducing Peter Griffin, the lovably absurd and hilariously clueless patriarch of the Griffin family from the animated sitcom Family Guy. Peter is a walking spectacle of comedic chaos, renowned for his unconventional antics and lack of filter. With a physique that defies both physics and fashion trends, he sports a prominent beer belly, a perpetual five o'clock shadow, and a grin that oozes mischief. Peter's trademark outfit consists of a white shirt, green pants, and a sense of humor that teeters on the edge of sanity.",
+      "description": "The Grumman F6F Hellcat first entered service in 1943 aboard the US Navy's Essex-class carriers. Despite having gone from prototype to frontline service in the span of one year, the Hellcat boasts superior performance over Japan's A6M Zero and is widely credited by historians as an aircraft which shifted the tide of war.",
       "age": "approximately in his 40s",
-      "avatar": "https://res.cloudinary.com/dakts9ect/image/upload/v1683833864/fcc-family-guys/peter/peter_qniww9.png",
+      "avatar": "/f6f.png",
       "images": [
         "https://res.cloudinary.com/dakts9ect/image/upload/v1683834164/fcc-family-guys/peter/peter-griffin-facts-730x456_pesfxs.png",
         "https://res.cloudinary.com/dakts9ect/image/upload/v1683834192/fcc-family-guys/peter/peter-griffin_x3zeka.png"
       ],
       "occupations": [
-        "Safety Inspector (formerly)",
-        "Brewery Worker",
-        "Various Odd Jobs"
+        "Air superiority",
+        "Ground attack",
+        "Nightfighting (F6F-5N)"
       ]
     },
     {
