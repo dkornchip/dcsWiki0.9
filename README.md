@@ -7,5 +7,7 @@ Strap up and buckle tight, airman!
 
 (The theme evolved first from Family Guy, to DCS, and then to what it is now, long story!)
 
+To run the app locally: npm run dev
+
 Update 6/28: added timer functionality to quiz.
 
